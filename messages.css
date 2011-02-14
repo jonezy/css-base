@@ -1,0 +1,29 @@
+﻿/* shared */
+.ErrorContainer, 
+.MessageContainer, 
+.InformationContainer,  
+.Info  { margin: 10px 0px 10px 0px; text-align: left; padding: 8px 0px 8px 8px; display: block; border: solid 1px; }
+
+.ErrorContainer p, 
+.MessageContainer p, 
+.InformationContainer p { padding: 0px 0px 0px 22px; margin: 0; }
+
+/* error container */
+.ErrorContainer { border-color:#CC0000; background: #FFEDEF; color: #CC0000; }	
+.ErrorContainer p {  background: url(../images/icons/exclamation.gif) no-repeat center left; color: #CC0000; }
+.ErrorContainer ul { margin-top: 10px; margin-bottom: 0px;}
+.ErrorContainer li{ list-style-type: disc; margin-left: 0px;padding-left:0px;}
+
+/* message container */
+.MessageContainer { background: #E3FEB3; border-color: #97D330; color: #5D8F06; }
+.MessageContainer p { background: url(../images/icons/accept.gif) no-repeat center left; color: #5D8F06; }
+.ErrorContainer ul { margin-top: 10px; margin-bottom: 0px;margin-left:0px;padding-left:18px;}
+.ErrorContainer li{ list-style-type: disc; margin-left: 0px;}
+
+/* information container */
+.InformationContainer, 
+.Info { background: #F8ECDE; border-color: #C96D01; color: #C96D01; }
+.InformationContainer p {  background: url(../images/icons/info.gif) no-repeat top left; color: #C96D01; }
+
+.MessageContainer.FlashMessage {padding:4px;}
+.FlashMessage {position:absolute; top:0px; left: 0px;margin:0px;width:100%;z-index:100;padding-left:0px;padding-right:0px;border-right:0px;}
